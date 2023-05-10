@@ -1,0 +1,13 @@
+cmake_minimum_required(VERSION 3.15)
+project(libA_issue13560 LANGUAGES CXX)
+
+add_library(libA_issue13560 libA_issue13560.cpp)
+
+include(GNUInstallDirs)
+install(FILES libA_issue13560.h DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
+install(
+    TARGETS libA_issue13560
+    ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
+    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+)
