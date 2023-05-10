@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.15)
 project(libA_issue13560 VERSION 1.0.0 LANGUAGES CXX)
 
+set(CMAKE_VERBOSE_MAKEFILE ON)
+
 add_library(libA_issue13560 libA_issue13560.cpp)
 set_target_properties(libA_issue13560 PROPERTIES WINDOWS_EXPORT_ALL_SYMBOLS ON)
 

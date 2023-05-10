@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.15)
 project(libB_issue13560 VERSION 1.0.0 LANGUAGES CXX)
 
+set(CMAKE_VERBOSE_MAKEFILE ON)
+
 find_package(libA_issue13560 REQUIRED CONFIG)
 
 add_library(libB_issue13560 libB_issue13560.cpp)
