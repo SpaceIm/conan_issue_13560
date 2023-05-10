@@ -1,0 +1,6 @@
+@PACKAGE_INIT@
+
+include(CMakeFindDependencyMacro)
+find_dependency(libB_issue13560)
+
+include("${CMAKE_CURRENT_LIST_DIR}/libC_issue13560Targets.cmake")
